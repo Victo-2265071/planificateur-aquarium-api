@@ -1,7 +1,4 @@
-import ENV from '@src/common/constants/ENV';
 import { IPoisson, Poisson } from '@src/models/Poisson';
-
-import mongoose from 'mongoose';
 
 /******************************************************************************
                                 Functions

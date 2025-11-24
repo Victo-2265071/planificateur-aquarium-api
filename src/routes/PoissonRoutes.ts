@@ -1,6 +1,5 @@
 import HttpStatusCodes from '@src/common/constants/HttpStatusCodes';
 import PoissonService from '@src/services/PoissonService';
-import { IPoisson } from '@src/models/Poisson';
 
 import { IReq, IRes } from './common/types';
 

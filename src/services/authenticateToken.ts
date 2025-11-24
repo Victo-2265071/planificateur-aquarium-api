@@ -1,4 +1,5 @@
 import jwt from 'jsonwebtoken';
+import { VerifyErrors } from 'jsonwebtoken';
 import { Response, Request, NextFunction } from 'express';
 import HttpStatusCodes from '@src/common/constants/HttpStatusCodes';
 import ENV from '@src/common/constants/ENV';
@@ -7,7 +8,7 @@ import ENV from '@src/common/constants/ENV';
  *
  * @param {Request} req - La requête au serveur
  * @param {Response} res - La réponse du serveur
- * @param {NextFunction} next - La fonction a appeler pour continuer le processus.
+ * @param {NextFunction} next - La fonction appelée pour continuer le process.
  */
 function authenticateToken(req: Request, res: Response, next: NextFunction) {
   // Ne pas vérifier le token si l'url est celui de generatetoken
@@ -17,16 +18,12 @@ function authenticateToken(req: Request, res: Response, next: NextFunction) {
     return;
   }
 
-  const authHeader = req.headers['authorization'];
-  const token = authHeader && authHeader.split(' ')[1];
-
-  console.log(token);
+  const authHeader = req.get('authorization');
+  const token = authHeader?.split(' ')?.[1];
 
   if (token == null) return res.sendStatus(HttpStatusCodes.UNAUTHORIZED);
 
-  jwt.verify(token, ENV.Jwtsecret as string, (err: any, user: any) => {
-    console.log(err);
-
+  jwt.verify(token, ENV.Jwtsecret, (err: VerifyErrors | null) => {
     if (err) return res.sendStatus(HttpStatusCodes.FORBIDDEN);
 
     next();

@@ -1,17 +1,13 @@
-import insertUrlParams from 'inserturlparams';
 import { customDeepCompare } from 'jet-validators/utils';
 
-import PoissonRepo from '@src/repos/PoissonRepo';
-
-import { POISSON_NON_TROUVE } from '@src/services/PoissonService';
-
 import HttpStatusCodes from '@src/common/constants/HttpStatusCodes';
-import { ValidationError } from '@src/common/util/route-errors';
 
 import Paths from './common/Paths';
-import { parseValidationErr, TRes } from './common/util';
+import { TRes } from './common/util';
 import { agent } from './support/setup';
 import { IPoisson, Poisson } from '@src/models/Poisson';
+
+/* eslint-disable */
 
 /******************************************************************************
                                Constants
@@ -84,8 +80,6 @@ const mockify = require('@jazim/mock-mongoose');
 ******************************************************************************/
 
 describe('poissonRouter', () => {
-  let dbPoissons: IPoisson[] = [];
-
   // Extraire tous les poissons
   describe(`'GET:${Paths.Poissons.Get}'`, () => {
     // Succès
