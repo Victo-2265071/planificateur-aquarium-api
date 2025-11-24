@@ -1,0 +1,28 @@
+meta {
+  name: Generate token
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://127.0.0.1:3000/api/generatetoken
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "userLogin": {
+      "email": "test@courriel.com",
+      "password": "123"
+    }
+  }
+}
+
+script:post-response {
+  bru.setEnvVar("jwttoken", res.body.token)
+}
+
+settings {
+  encodeUrl: true
+}
