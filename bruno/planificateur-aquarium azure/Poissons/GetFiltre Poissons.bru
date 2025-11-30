@@ -1,0 +1,25 @@
+meta {
+  name: GetFiltre Poissons
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:3000/api/Poissons/filtre?minVolume=50&eauSalee=true
+  body: none
+  auth: bearer
+}
+
+params:query {
+  minVolume: 50
+  eauSalee: true
+}
+
+auth:bearer {
+  token: {{jwttoken}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

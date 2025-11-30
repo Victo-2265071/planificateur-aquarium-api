@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "planificateur-aquarium azure",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

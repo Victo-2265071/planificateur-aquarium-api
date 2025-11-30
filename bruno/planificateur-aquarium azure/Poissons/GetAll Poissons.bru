@@ -1,0 +1,20 @@
+meta {
+  name: GetAll Poissons
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:3000/api/Poissons/all
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{jwttoken}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
