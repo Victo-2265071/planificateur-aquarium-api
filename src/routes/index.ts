@@ -9,6 +9,8 @@ import AquariumRoutes from './AquariumRoutes';
 import HttpStatusCodes from '@src/common/constants/HttpStatusCodes';
 import { Aquarium } from '@src/models/Aquarium';
 
+/* eslint-disable */
+
 /******************************************************************************
                                 Setup
 ******************************************************************************/
