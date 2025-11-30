@@ -2,7 +2,7 @@ import mongoose, { Schema, model } from 'mongoose';
 
 // Interface pour un poisson
 export interface IPoisson {
-  id: number;
+  id: string;
   nom: string;
   nomScientifique: string;
   minVolume: number;
@@ -15,16 +15,52 @@ export interface IPoisson {
 }
 
 const PoissonSchema = new Schema<IPoisson>({
-  id: { type: Number, required: true },
-  nom: { type: String, required: true, maxlength: 100 },
-  nomScientifique: { type: String, required: true, maxlength: 150 },
-  minVolume: { type: Number, required: true, min: 0 },
-  minTemperature: { type: Number, required: true },
-  maxTemperature: { type: Number, required: true },
-  gregarite: { type: Number, required: true, min: 1 },
-  dureeVie: { type: Number, required: true, min: 0 },
-  estAggressif: { type: Boolean, required: true },
-  eauSalee: { type: Boolean, required: true },
+  id: {
+    type: String,
+    required: [true, "L'ID est obligatoire."],
+    unique: true,
+  },
+  nom: {
+    type: String,
+    required: [true, 'Le nom est obligatoire.'],
+    maxlength: [100, '100 caractères max pour le nom.'],
+  },
+  nomScientifique: {
+    type: String,
+    required: [true, 'Le nom scientifique est obligatoire.'],
+    maxlength: [150, '150 caractères max pour le nom scientifique.'],
+  },
+  minVolume: {
+    type: Number,
+    required: [true, 'Le volume minimal est obligatoire.'],
+    min: [0, 'Le volume minimal doit être ≥ 0.'],
+  },
+  minTemperature: {
+    type: Number,
+    required: [true, 'La température minimale est obligatoire.'],
+  },
+  maxTemperature: {
+    type: Number,
+    required: [true, 'La température maximale est obligatoire.'],
+  },
+  gregarite: {
+    type: Number,
+    required: [true, 'La grégarité est obligatoire.'],
+    min: [1, "La grégarité doit être d'au moins 1."],
+  },
+  dureeVie: {
+    type: Number,
+    required: [true, 'La durée de vie est obligatoire.'],
+    min: [0, 'La durée de vie doit être ≥ 0.'],
+  },
+  estAggressif: {
+    type: Boolean,
+    required: [true, 'Tu dois préciser si le poisson est agressif.'],
+  },
+  eauSalee: {
+    type: Boolean,
+    required: [true, 'Tu dois préciser si le poisson vit en eau salée.'],
+  },
 });
 
 mongoose.pluralize(null);

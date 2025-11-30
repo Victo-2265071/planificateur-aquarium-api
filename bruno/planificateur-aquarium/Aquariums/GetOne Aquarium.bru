@@ -1,0 +1,20 @@
+meta {
+  name: GetOne Aquarium
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:3000/api/Aquariums/69277966950717def64f344e
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{jwttoken}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

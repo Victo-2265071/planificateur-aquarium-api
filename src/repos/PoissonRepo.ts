@@ -29,6 +29,17 @@ async function getAll(): Promise<IPoisson[]> {
   return poissons;
 }
 
+// Extraire tous les poissons en fonction de filtres
+async function getFiltre(
+  minVolume: number,
+  eauSalee: boolean,
+): Promise<IPoisson[]> {
+  return Poisson.find({
+    minVolume: { $lte: minVolume },
+    eauSalee: eauSalee,
+  });
+}
+
 /******************************************************************************
                                 Export default
 ******************************************************************************/
@@ -36,4 +47,5 @@ async function getAll(): Promise<IPoisson[]> {
 export default {
   getOne,
   getAll,
+  getFiltre,
 } as const;

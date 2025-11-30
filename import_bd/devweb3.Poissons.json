@@ -1,0 +1,600 @@
+[{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9c8"
+  },
+  "id": 1,
+  "nom": "Poisson rouge",
+  "minVolume": 60,
+  "nomScientifique": "Carassius auratus",
+  "minTemperature": 18,
+  "maxTemperature": 24,
+  "gregarite": 1,
+  "dureeVie": 15,
+  "estAggressif": false,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9c9"
+  },
+  "id": 2,
+  "nom": "Guppy",
+  "minVolume": 40,
+  "nomScientifique": "Poecilia reticulata",
+  "minTemperature": 22,
+  "maxTemperature": 28,
+  "gregarite": 3,
+  "dureeVie": 2,
+  "estAggressif": false,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9ca"
+  },
+  "id": 3,
+  "nom": "Néon bleu",
+  "minVolume": 60,
+  "nomScientifique": "Paracheirodon innesi",
+  "minTemperature": 20,
+  "maxTemperature": 26,
+  "gregarite": 6,
+  "dureeVie": 5,
+  "estAggressif": false,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9cb"
+  },
+  "id": 4,
+  "nom": "Betta splendens",
+  "minVolume": 20,
+  "nomScientifique": "Betta splendens",
+  "minTemperature": 24,
+  "maxTemperature": 30,
+  "gregarite": 1,
+  "dureeVie": 3,
+  "estAggressif": true,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9cc"
+  },
+  "id": 5,
+  "nom": "Corydoras poivré",
+  "minVolume": 80,
+  "nomScientifique": "Corydoras paleatus",
+  "minTemperature": 20,
+  "maxTemperature": 26,
+  "gregarite": 6,
+  "dureeVie": 8,
+  "estAggressif": false,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9cd"
+  },
+  "id": 6,
+  "nom": "Molly",
+  "minVolume": 80,
+  "nomScientifique": "Poecilia sphenops",
+  "minTemperature": 24,
+  "maxTemperature": 28,
+  "gregarite": 3,
+  "dureeVie": 5,
+  "estAggressif": false,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9ce"
+  },
+  "id": 7,
+  "nom": "Platy",
+  "minVolume": 60,
+  "nomScientifique": "Xiphophorus maculatus",
+  "minTemperature": 22,
+  "maxTemperature": 26,
+  "gregarite": 3,
+  "dureeVie": 4,
+  "estAggressif": false,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9cf"
+  },
+  "id": 8,
+  "nom": "Xipho",
+  "minVolume": 80,
+  "nomScientifique": "Xiphophorus hellerii",
+  "minTemperature": 22,
+  "maxTemperature": 28,
+  "gregarite": 3,
+  "dureeVie": 5,
+  "estAggressif": true,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9d0"
+  },
+  "id": 9,
+  "nom": "Danio rerio",
+  "minVolume": 60,
+  "nomScientifique": "Danio rerio",
+  "minTemperature": 18,
+  "maxTemperature": 25,
+  "gregarite": 6,
+  "dureeVie": 5,
+  "estAggressif": false,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9d1"
+  },
+  "id": 10,
+  "nom": "Tetra citron",
+  "minVolume": 70,
+  "nomScientifique": "Hyphessobrycon pulchripinnis",
+  "minTemperature": 22,
+  "maxTemperature": 28,
+  "gregarite": 6,
+  "dureeVie": 5,
+  "estAggressif": false,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9d2"
+  },
+  "id": 11,
+  "nom": "Ramirezi",
+  "minVolume": 80,
+  "nomScientifique": "Mikrogeophagus ramirezi",
+  "minTemperature": 26,
+  "maxTemperature": 30,
+  "gregarite": 2,
+  "dureeVie": 3,
+  "estAggressif": true,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9d3"
+  },
+  "id": 12,
+  "nom": "Apistogramma cacatuoides",
+  "minVolume": 80,
+  "nomScientifique": "Apistogramma cacatuoides",
+  "minTemperature": 24,
+  "maxTemperature": 28,
+  "gregarite": 2,
+  "dureeVie": 5,
+  "estAggressif": true,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9d4"
+  },
+  "id": 13,
+  "nom": "Ancistrus",
+  "minVolume": 100,
+  "nomScientifique": "Ancistrus sp.",
+  "minTemperature": 22,
+  "maxTemperature": 28,
+  "gregarite": 1,
+  "dureeVie": 10,
+  "estAggressif": true,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9d5"
+  },
+  "id": 14,
+  "nom": "Otocinclus",
+  "minVolume": 80,
+  "nomScientifique": "Otocinclus affinis",
+  "minTemperature": 22,
+  "maxTemperature": 26,
+  "gregarite": 6,
+  "dureeVie": 5,
+  "estAggressif": false,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9d6"
+  },
+  "id": 15,
+  "nom": "Gourami nain",
+  "minVolume": 80,
+  "nomScientifique": "Trichogaster lalius",
+  "minTemperature": 24,
+  "maxTemperature": 28,
+  "gregarite": 2,
+  "dureeVie": 4,
+  "estAggressif": true,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9d7"
+  },
+  "id": 16,
+  "nom": "Gourami perlé",
+  "minVolume": 120,
+  "nomScientifique": "Trichopodus leerii",
+  "minTemperature": 24,
+  "maxTemperature": 30,
+  "gregarite": 2,
+  "dureeVie": 6,
+  "estAggressif": true,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9d8"
+  },
+  "id": 17,
+  "nom": "Cardinalis",
+  "minVolume": 80,
+  "nomScientifique": "Paracheirodon axelrodi",
+  "minTemperature": 24,
+  "maxTemperature": 30,
+  "gregarite": 10,
+  "dureeVie": 5,
+  "estAggressif": false,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9d9"
+  },
+  "id": 18,
+  "nom": "Barbus cerise",
+  "minVolume": 70,
+  "nomScientifique": "Puntius titteya",
+  "minTemperature": 22,
+  "maxTemperature": 26,
+  "gregarite": 6,
+  "dureeVie": 5,
+  "estAggressif": true,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9da"
+  },
+  "id": 19,
+  "nom": "Kuhli",
+  "minVolume": 100,
+  "nomScientifique": "Pangio kuhlii",
+  "minTemperature": 24,
+  "maxTemperature": 30,
+  "gregarite": 5,
+  "dureeVie": 10,
+  "estAggressif": false,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9db"
+  },
+  "id": 20,
+  "nom": "Discus",
+  "minVolume": 300,
+  "nomScientifique": "Symphysodon aequifasciatus",
+  "minTemperature": 28,
+  "maxTemperature": 32,
+  "gregarite": 6,
+  "dureeVie": 10,
+  "estAggressif": true,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9dc"
+  },
+  "id": 21,
+  "nom": "Scalare",
+  "minVolume": 200,
+  "nomScientifique": "Pterophyllum scalare",
+  "minTemperature": 24,
+  "maxTemperature": 30,
+  "gregarite": 4,
+  "dureeVie": 10,
+  "estAggressif": true,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9dd"
+  },
+  "id": 22,
+  "nom": "Poisson-clown",
+  "minVolume": 100,
+  "nomScientifique": "Amphiprion ocellaris",
+  "minTemperature": 24,
+  "maxTemperature": 28,
+  "gregarite": 2,
+  "dureeVie": 8,
+  "estAggressif": true,
+  "eauSalee": true
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9de"
+  },
+  "id": 23,
+  "nom": "Chromis bleu",
+  "minVolume": 120,
+  "nomScientifique": "Chromis viridis",
+  "minTemperature": 24,
+  "maxTemperature": 28,
+  "gregarite": 5,
+  "dureeVie": 8,
+  "estAggressif": false,
+  "eauSalee": true
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9df"
+  },
+  "id": 24,
+  "nom": "Labre nettoyeur",
+  "minVolume": 200,
+  "nomScientifique": "Labroides dimidiatus",
+  "minTemperature": 24,
+  "maxTemperature": 28,
+  "gregarite": 2,
+  "dureeVie": 6,
+  "estAggressif": false,
+  "eauSalee": true
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9e0"
+  },
+  "id": 25,
+  "nom": "Tang jaune",
+  "minVolume": 250,
+  "nomScientifique": "Zebrasoma flavescens",
+  "minTemperature": 24,
+  "maxTemperature": 28,
+  "gregarite": 1,
+  "dureeVie": 10,
+  "estAggressif": true,
+  "eauSalee": true
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9e1"
+  },
+  "id": 26,
+  "nom": "Mandarin",
+  "minVolume": 150,
+  "nomScientifique": "Synchiropus splendidus",
+  "minTemperature": 24,
+  "maxTemperature": 28,
+  "gregarite": 2,
+  "dureeVie": 8,
+  "estAggressif": false,
+  "eauSalee": true
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9e2"
+  },
+  "id": 27,
+  "nom": "Gobiodon okinawae",
+  "minVolume": 80,
+  "nomScientifique": "Gobiodon okinawae",
+  "minTemperature": 24,
+  "maxTemperature": 28,
+  "gregarite": 2,
+  "dureeVie": 5,
+  "estAggressif": true,
+  "eauSalee": true
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9e3"
+  },
+  "id": 28,
+  "nom": "Poisson-ange empereur",
+  "minVolume": 400,
+  "nomScientifique": "Pomacanthus imperator",
+  "minTemperature": 24,
+  "maxTemperature": 28,
+  "gregarite": 1,
+  "dureeVie": 15,
+  "estAggressif": true,
+  "eauSalee": true
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9e4"
+  },
+  "id": 29,
+  "nom": "Gramma loreto",
+  "minVolume": 100,
+  "nomScientifique": "Gramma loreto",
+  "minTemperature": 24,
+  "maxTemperature": 28,
+  "gregarite": 2,
+  "dureeVie": 6,
+  "estAggressif": true,
+  "eauSalee": true
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9e5"
+  },
+  "id": 30,
+  "nom": "Poisson cardinal de Banggai",
+  "minVolume": 100,
+  "nomScientifique": "Pterapogon kauderni",
+  "minTemperature": 24,
+  "maxTemperature": 28,
+  "gregarite": 2,
+  "dureeVie": 8,
+  "estAggressif": false,
+  "eauSalee": true
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9e6"
+  },
+  "id": 31,
+  "nom": "Poisson papillon à quatre bandes",
+  "minVolume": 250,
+  "nomScientifique": "Chaetodon austriacus",
+  "minTemperature": 24,
+  "maxTemperature": 28,
+  "gregarite": 2,
+  "dureeVie": 10,
+  "estAggressif": true,
+  "eauSalee": true
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9e7"
+  },
+  "id": 32,
+  "nom": "Cardinal de Kauderni",
+  "minVolume": 100,
+  "nomScientifique": "Pterapogon kauderni",
+  "minTemperature": 24,
+  "maxTemperature": 28,
+  "gregarite": 2,
+  "dureeVie": 8,
+  "estAggressif": false,
+  "eauSalee": true
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9e8"
+  },
+  "id": 33,
+  "nom": "Rasbora arlequin",
+  "minVolume": 60,
+  "nomScientifique": "Trigonostigma heteromorpha",
+  "minTemperature": 23,
+  "maxTemperature": 28,
+  "gregarite": 8,
+  "dureeVie": 6,
+  "estAggressif": false,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9e9"
+  },
+  "id": 34,
+  "nom": "Tetra empereur",
+  "minVolume": 70,
+  "nomScientifique": "Nematobrycon palmeri",
+  "minTemperature": 23,
+  "maxTemperature": 28,
+  "gregarite": 6,
+  "dureeVie": 5,
+  "estAggressif": true,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9ea"
+  },
+  "id": 35,
+  "nom": "Killie",
+  "minVolume": 40,
+  "nomScientifique": "Aphyosemion australe",
+  "minTemperature": 20,
+  "maxTemperature": 26,
+  "gregarite": 2,
+  "dureeVie": 2,
+  "estAggressif": true,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9eb"
+  },
+  "id": 36,
+  "nom": "Silure de verre",
+  "minVolume": 100,
+  "nomScientifique": "Kryptopterus vitreolus",
+  "minTemperature": 24,
+  "maxTemperature": 28,
+  "gregarite": 6,
+  "dureeVie": 8,
+  "estAggressif": false,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9ec"
+  },
+  "id": 37,
+  "nom": "Loach clown",
+  "minVolume": 300,
+  "nomScientifique": "Chromobotia macracanthus",
+  "minTemperature": 26,
+  "maxTemperature": 30,
+  "gregarite": 5,
+  "dureeVie": 20,
+  "estAggressif": true,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9ed"
+  },
+  "id": 38,
+  "nom": "Barbus de Sumatra",
+  "minVolume": 100,
+  "nomScientifique": "Puntigrus tetrazona",
+  "minTemperature": 22,
+  "maxTemperature": 28,
+  "gregarite": 6,
+  "dureeVie": 7,
+  "estAggressif": true,
+  "eauSalee": false
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9ee"
+  },
+  "id": 39,
+  "nom": "Poisson-archer",
+  "minVolume": 200,
+  "nomScientifique": "Toxotes jaculatrix",
+  "minTemperature": 25,
+  "maxTemperature": 30,
+  "gregarite": 4,
+  "dureeVie": 10,
+  "estAggressif": true,
+  "eauSalee": true
+},
+{
+  "_id": {
+    "$oid": "691e5166ea4fb7e28b8de9ef"
+  },
+  "id": 40,
+  "nom": "Poisson-ballon nain",
+  "minVolume": 50,
+  "nomScientifique": "Carinotetraodon travancoricus",
+  "minTemperature": 24,
+  "maxTemperature": 28,
+  "gregarite": 3,
+  "dureeVie": 4,
+  "estAggressif": true,
+  "eauSalee": false
+}]

@@ -16,7 +16,7 @@ import { IPoisson, Poisson } from '@src/models/Poisson';
 // Données bidon pour les poissons (simulacre de GET)
 const DB_POISSONS: IPoisson[] = [
   {
-    id: 1,
+    id: '1',
     nom: 'Poisson rouge',
     minVolume: 60,
     nomScientifique: 'Carassius auratus',
@@ -28,7 +28,7 @@ const DB_POISSONS: IPoisson[] = [
     eauSalee: false,
   },
   {
-    id: 2,
+    id: '2',
     nom: 'Guppy',
     minVolume: 40,
     nomScientifique: 'Poecilia reticulata',
@@ -40,7 +40,7 @@ const DB_POISSONS: IPoisson[] = [
     eauSalee: false,
   },
   {
-    id: 3,
+    id: '3',
     nom: 'Néon bleu',
     minVolume: 60,
     nomScientifique: 'Paracheirodon innesi',
@@ -52,7 +52,7 @@ const DB_POISSONS: IPoisson[] = [
     eauSalee: false,
   },
   {
-    id: 4,
+    id: '4',
     nom: 'Betta splendens',
     minVolume: 20,
     nomScientifique: 'Betta splendens',

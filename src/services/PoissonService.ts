@@ -18,10 +18,18 @@ function getAll(): Promise<IPoisson[]> {
   return PoissonRepo.getAll();
 }
 
+/**
+ * Extraire tous les poissons filtrés.
+ */
+function getFiltre(minVolume: number, eauSalee: boolean) {
+  return PoissonRepo.getFiltre(minVolume, eauSalee);
+}
+
 /******************************************************************************
                                 Export default
 ******************************************************************************/
 
 export default {
   getAll,
+  getFiltre,
 } as const;

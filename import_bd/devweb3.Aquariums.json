@@ -1,0 +1,147 @@
+[{
+  "_id": {
+    "$oid": "69278ae3b61a01a05081b75c"
+  },
+  "nom": "Océan Pacifique",
+  "volume": 200,
+  "eau_salee": false,
+  "date_creation": {
+    "$date": "2025-11-26T00:00:00.000Z"
+  },
+  "poissons": [
+    {
+      "poisson_nom": "Guppy",
+      "quantite": 3,
+      "_id": {
+        "$oid": "69278ae3b61a01a05081b75d"
+      }
+    },
+    {
+      "poisson_nom": "Néon-Tetra",
+      "quantite": 2,
+      "_id": {
+        "$oid": "69278ae3b61a01a05081b75e"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6928b3da121ca5932f2d2b01"
+  },
+  "nom": "Aquarium Salon",
+  "volume": 100,
+  "eau_salee": true,
+  "date_creation": {
+    "$date": "2025-11-27T21:12:46.367Z"
+  },
+  "poissons": [
+    {
+      "poisson_nom": "Poisson-clown",
+      "quantite": 2,
+      "_id": {
+        "$oid": "6928bece121ca5932f2d2c69"
+      }
+    },
+    {
+      "poisson_nom": "Gramma loreto",
+      "quantite": 1,
+      "_id": {
+        "$oid": "6928bece121ca5932f2d2c6a"
+      }
+    }
+  ],
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "6928b419121ca5932f2d2b4b"
+  },
+  "nom": "Aquarium Marin",
+  "volume": 50,
+  "eau_salee": true,
+  "date_creation": {
+    "$date": "2025-11-27T20:27:05.583Z"
+  },
+  "poissons": [
+    {
+      "poisson_nom": "Poisson-clown",
+      "quantite": 2,
+      "_id": {
+        "$oid": "6928b419121ca5932f2d2b4c"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6928c878121ca5932f2d3061"
+  },
+  "nom": "Aquarium test",
+  "volume": 150,
+  "eau_salee": false,
+  "date_creation": {
+    "$date": "2025-11-27T21:54:00.978Z"
+  },
+  "poissons": [
+    {
+      "poisson_nom": "Scalare",
+      "quantite": 4,
+      "_id": {
+        "$oid": "6928c894121ca5932f2d3086"
+      }
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "692c891d65d437dcba5c6cd7"
+  },
+  "nom": "Aquarium du bureau",
+  "volume": 100,
+  "eau_salee": true,
+  "date_creation": {
+    "$date": "2025-11-30T00:00:00.000Z"
+  },
+  "poissons": [
+    {
+      "poisson_nom": "Gramma loreto",
+      "quantite": 1,
+      "_id": {
+        "$oid": "692c891d65d437dcba5c6cd8"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692c894465d437dcba5c6d13"
+  },
+  "nom": "Chambre",
+  "volume": 250,
+  "eau_salee": false,
+  "date_creation": {
+    "$date": "2025-11-30T00:00:00.000Z"
+  },
+  "poissons": [
+    {
+      "poisson_nom": "Betta splendens",
+      "quantite": 1,
+      "_id": {
+        "$oid": "692c8d3f65d437dcba5c6d40"
+      }
+    },
+    {
+      "poisson_nom": "Ramirezi",
+      "quantite": 4,
+      "_id": {
+        "$oid": "692c8d3f65d437dcba5c6d41"
+      }
+    }
+  ],
+  "__v": 1
+}]
