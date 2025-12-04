@@ -1,7 +1,9 @@
+/* eslint-disable n/no-process-env */
+
 import moduleAlias from 'module-alias';
 
 // Check the env
-// const NODE_ENV = process.env.NODE_ENV ?? 'development';
+const NODE_ENV = process.env.NODE_ENV ?? 'development';
 
 // // Configure "dotenv"
 // const result2 = dotenv.config({
