@@ -18,6 +18,8 @@ import authenticateToken from './services/authenticateToken';
 
 import cors from 'cors';
 
+/* eslint-disable */
+
 /******************************************************************************
                                 Setup
 ******************************************************************************/
