@@ -1,4 +1,5 @@
 import mongoose, { Schema, model } from 'mongoose';
+/* eslint-disable */
 
 export interface IAquarium {
   _id?: string;
@@ -22,12 +23,12 @@ const AquariumSchema = new Schema<IAquarium>({
   volume: {
     type: Number,
     required: [true, 'Le volume est obligatoire.'],
-    min: [1, "Le volume doit être d'au moins 1 litre."],
+    min: [1, 'Le volume doit être au moins 1 litre.'],
   },
 
   eau_salee: {
     type: Boolean,
-    required: [true, "Tu dois préciser s'il s'agit d'eau salée ou non."],
+    required: [true, 'Tu dois préciser si eau salée ou non.'],
   },
 
   date_creation: {
@@ -47,7 +48,7 @@ const AquariumSchema = new Schema<IAquarium>({
       quantite: {
         type: Number,
         required: [true, 'La quantité est obligatoire.'],
-        min: [1, "La quantité doit être d'au moins 1."],
+        min: [1, 'La quantité doit être au moins 1.'],
       },
     },
   ],

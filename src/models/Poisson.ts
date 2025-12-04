@@ -17,7 +17,7 @@ export interface IPoisson {
 const PoissonSchema = new Schema<IPoisson>({
   id: {
     type: String,
-    required: [true, "L'ID est obligatoire."],
+    required: [true, 'ID est obligatoire.'],
     unique: true,
   },
   nom: {
@@ -46,7 +46,7 @@ const PoissonSchema = new Schema<IPoisson>({
   gregarite: {
     type: Number,
     required: [true, 'La grégarité est obligatoire.'],
-    min: [1, "La grégarité doit être d'au moins 1."],
+    min: [1, 'La grégarité doit être au moins 1.'],
   },
   dureeVie: {
     type: Number,

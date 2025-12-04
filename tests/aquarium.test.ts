@@ -1,15 +1,12 @@
 import insertUrlParams from 'inserturlparams';
 import { customDeepCompare } from 'jet-validators/utils';
 
-import AquariumRepo from '@src/repos/AquariumRepo';
-
 import { AQUARIUM_NON_TROUVE } from '@src/services/AquariumService';
 
 import HttpStatusCodes from '@src/common/constants/HttpStatusCodes';
-import { ValidationError } from '@src/common/util/route-errors';
+import { TRes } from './common/util';
 
 import Paths from './common/Paths';
-import { parseValidationErr, TRes } from './common/util';
 import { agent } from './support/setup';
 import { IAquarium, Aquarium } from '@src/models/Aquarium';
 
