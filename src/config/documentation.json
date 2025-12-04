@@ -1,0 +1,217 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Planificateur Aquarium API",
+    "version": "1.0.0",
+    "description": "API pour gérer les poissons, aquariums et utilisateurs"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000/api",
+      "description": "Serveur local"
+    }
+  ],
+  "paths": {
+    "/aquariums/{id}": {
+      "get": {
+        "summary": "Récupère un aquarium par ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string" },
+            "description": "ID de l'aquarium"
+          }
+        ],
+        "responses": {
+          "200": { "description": "Détails de l’aquarium" },
+          "404": { "description": "Aquarium non trouvé" }
+        }
+      }
+    },
+    "/aquariums/all": {
+      "get": {
+        "summary": "Récupère tous les aquariums",
+        "responses": {
+          "200": { "description": "Liste des aquariums" }
+        }
+      }
+    },
+    "/aquariums/add": {
+      "post": {
+        "summary": "Ajoute un aquarium",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "example": {
+                "aquarium": {
+                  "nom": "Mon aquarium",
+                  "volume": 100,
+                  "eau_salee": true,
+                  "poissons": [{ "poisson_nom": "Clown", "quantite": 2 }]
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Aquarium créé" },
+          "400": { "description": "Requête invalide" }
+        }
+      }
+    },
+    "/aquariums/update": {
+      "put": {
+        "summary": "Met à jour un aquarium",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "example": {
+                "aquarium": {
+                  "_id": "63f1c2e7b9f2a3a1e7d9c0b5",
+                  "nom": "Aquarium modifié",
+                  "volume": 120,
+                  "eau_salee": false,
+                  "poissons": [{ "poisson_nom": "Guppy", "quantite": 5 }]
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Aquarium mis à jour" },
+          "404": { "description": "Aquarium non trouvé" }
+        }
+      }
+    },
+    "/aquariums/delete/{id}": {
+      "delete": {
+        "summary": "Supprime un aquarium",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string" },
+            "description": "ID de l'aquarium"
+          }
+        ],
+        "responses": {
+          "200": { "description": "Aquarium supprimé" },
+          "404": { "description": "Aquarium non trouvé" }
+        }
+      }
+    },
+    "/poissons/all": {
+      "get": {
+        "summary": "Récupère tous les poissons",
+        "responses": {
+          "200": {
+            "description": "Liste des poissons",
+            "content": {
+              "application/json": {
+                "example": {
+                  "poissons": [
+                    {
+                      "id": "1",
+                      "nom": "Clown",
+                      "nomScientifique": "Amphiprion ocellaris",
+                      "minVolume": 50,
+                      "minTemperature": 24,
+                      "maxTemperature": 28,
+                      "gregarite": 5,
+                      "dureeVie": 10,
+                      "estAggressif": false,
+                      "eauSalee": true
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/poissons/filtre": {
+      "get": {
+        "summary": "Récupère les poissons filtrés par volume et eau salée",
+        "parameters": [
+          {
+            "name": "minVolume",
+            "in": "query",
+            "required": true,
+            "schema": { "type": "number" },
+            "description": "Volume minimal du poisson"
+          },
+          {
+            "name": "eauSalee",
+            "in": "query",
+            "required": true,
+            "schema": { "type": "boolean" },
+            "description": "Si le poisson vit en eau salée"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Liste filtrée des poissons",
+            "content": {
+              "application/json": {
+                "example": {
+                  "poissons": [
+                    {
+                      "id": "1",
+                      "nom": "Clown",
+                      "nomScientifique": "Amphiprion ocellaris",
+                      "minVolume": 50,
+                      "minTemperature": 24,
+                      "maxTemperature": 28,
+                      "gregarite": 5,
+                      "dureeVie": 10,
+                      "estAggressif": false,
+                      "eauSalee": true
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "400": { "description": "minVolume doit être un nombre" }
+        }
+      }
+    },
+    "/generatetoken": {
+      "post": {
+        "summary": "Génère un token pour l'utilisateur",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "example": {
+                "userLogin": {
+                  "email": "test@courriel.com",
+                  "password": "123"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Token généré",
+            "content": {
+              "application/json": {
+                "example": {
+                  "token": "eyJhbGciOiJIUzI1NiJ9.dGVzdEBjb3VycmllbC5jb20.gbCtz0FKpLjqE7V_9_-nfZhLr9y0yHEaDXRFUj35oKA"
+                }
+              }
+            }
+          },
+          "400": { "description": "Requête invalide" }
+        }
+      }
+    }
+  }
+}

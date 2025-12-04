@@ -4,6 +4,9 @@ import helmet from 'helmet';
 import express, { Request, Response, NextFunction } from 'express';
 import logger from 'jet-logger';
 
+import swaggerUi from 'swagger-ui-express';
+import fs from 'fs';
+
 import BaseRouter from '@src/routes';
 
 import Paths from '@src/common/constants/Paths';
@@ -19,6 +22,15 @@ import cors from 'cors';
                                 Setup
 ******************************************************************************/
 
+const swaggerDocument = JSON.parse(
+  fs.readFileSync('./src/config/documentation.json', 'utf8'),
+);
+
+const swaggerOptions = {
+  customCss: '.swagger-ui .topbar { display: none }',
+  customSiteTitle: 'Demo API',
+};
+
 const app = express();
 
 // **** Middleware **** //
@@ -27,6 +39,11 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.use(
+  '/api/docs',
+  swaggerUi.serve,
+  swaggerUi.setup(swaggerDocument, swaggerOptions),
+);
 app.use(cors());
 
 // Show routes called in console during development
